@@ -1,0 +1,16 @@
+<p>Hej, this is Rope Game</p>
+
+<div 
+  class="game"
+  tabindex="0"
+  (keydown)="handleKeyDown($event)"
+  (keyup)="handleKeyUp($event)"
+  (keypress)="handleKeyPress($event)"
+  (mousedown)="handleMouseDown($event)"
+>
+  @if (game) {
+    <app-game-content
+      [game]="game"
+    ></app-game-content>
+  }
+</div>
